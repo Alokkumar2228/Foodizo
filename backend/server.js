@@ -3,14 +3,14 @@ import cors from "cors"
 import { connectDB } from "./config/db.js"
 import foodRouter from "./routes/foodRoutes.js"
 import userRouter from "./routes/userRoutes.js"
-import 'dotenv/config'
+import dotenv from "dotenv"
 import cartRouter from "./routes/cartRoutes.js"
 import orderRouter from "./routes/orderRoutes.js"
 import resetRouter from "./routes/resetPassRoute.js"
 import adminRouter from "./routes/adminRoutes.js"
 import resetPasswordRouter from "./routes/adminPasswordRecovery.js"
 
-
+dotenv.config()
 
 
 //app config

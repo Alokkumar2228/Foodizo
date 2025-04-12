@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import adminModel from "../models/adminModel.js";
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModels.js";
