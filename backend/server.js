@@ -17,7 +17,10 @@ dotenv.config()
 const app = express()
 const port = process.env.PORT || 4000
 //using cosrs you can access backend from any frontend
-app.use(cors()) 
+app.use(cors({
+    origin: "https://foodizo-frontend-h5rj.onrender.com",
+    credentials: true
+  }));
 app.use(express.urlencoded({extended:true}))
 //middleware
 app.use(express.json())
