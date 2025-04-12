@@ -16,7 +16,7 @@ import ResetPassword from './components/ResetPassword/ResetPassword'
 
 const App = () => {
 
-  const url="http://localhost:4000";
+  const url="https://foodizo-backend-eq3w.onrender.com";
   const[token,setToken] = useState(localStorage.getItem("token") || "");
   const [email,setEmail] = useState("");
 
