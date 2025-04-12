@@ -19,7 +19,9 @@ const port = process.env.PORT || 4000
 //using cosrs you can access backend from any frontend
 app.use(cors({
     origin: "https://foodizo-frontend-h5rj.onrender.com",
-    credentials: true
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+
   }));
 app.use(express.urlencoded({extended:true}))
 //middleware
