@@ -19,7 +19,7 @@ const port = process.env.PORT || 4000
 //using cosrs you can access backend from any frontend
 const allowedOrigins = [
     "https://foodizo-frontend-h5rj.onrender.com",
-    "https://foodizo-admin.onrender.com"
+    "https://foodizo-admin.onrender.com","https://foodizo-frontend.onrender.com/"
   ];
   
   app.use(cors({
