@@ -13,11 +13,14 @@ const Verify = () => {
     const {url} = useContext(StoreContext);
     const navigate = useNavigate();
 
+      
+
     
 
     const verifyPayment = async () => {
         try {
           const response = await axios.post(`${url}/api/order/verify`, { success, orderId });
+          console.log(response.data);
           if (response.data.success) {
             navigate("/order");
           } else {
@@ -31,6 +34,7 @@ const Verify = () => {
       
 
     useEffect(()=>{
+        console.log("Verify page loaded 🚀", { success, orderId });
         verifyPayment();
     },[]);
 
