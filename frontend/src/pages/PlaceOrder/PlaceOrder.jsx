@@ -48,6 +48,7 @@ const PlaceOrder = ({ setShowLogin}) => {
       
       if (response.data.success) {
         const {url} = response.data;
+        console.log(url);
         window.location.replace(url);
       } else {
         alert("Error placing order");

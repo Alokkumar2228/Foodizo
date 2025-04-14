@@ -88,10 +88,10 @@ const App = () => {
           <Route path='/' element={<Home searchquery={searchquery} recent1={recent1} recent2={recent2} setRecent1={setRecent1} setRecent2={setRecent2}/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/order' element={<PlaceOrder  setShowLogin={setShowLogin}/>}/> 
-          <Route path='/verify' element={<Verify/>}/ >
-          <Route path='/myorders' element={<MyOrder/>}/ >
-          <Route path='/reset' element={<ForgetPopup setShowLogin={setShowLogin}/>}/ >
-          <Route path='/resetpassword/:token' element={<ResetPassword setShowLogin={setShowLogin} />}/ >
+          <Route path='/verify' element={<Verify/>}/>
+          <Route path='/myorders' element={<MyOrder/>}/>
+          <Route path='/reset' element={<ForgetPopup setShowLogin={setShowLogin}/>}/>
+          <Route path='/resetpassword/:token' element={<ResetPassword setShowLogin={setShowLogin} />}/>
 
           
 
