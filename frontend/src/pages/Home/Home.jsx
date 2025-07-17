@@ -33,7 +33,6 @@ const Home = ({searchquery,recent1, recent2 ,setRecent1, setRecent2}) => {
     <FoodDisplay category={category} searchquery={searchquery} recent1={recent1} recent2={recent2} />
   )
 }
-      {/* <FoodDisplay category={category} searchquery={searchquery} recent1={recent1} recent2={recent2} /> */}
       <AppDownload/>
     </div>
   )

@@ -73,8 +73,8 @@ const StoreContextProvider = (props) =>{
 
     const fetchfood_list = async () =>{
         setLoading(true);
-        // const foodData = await axios.get(`${url}/api/food/all`);
-        // setLoading(false);
+        const foodData = await axios.get(`${url}/api/food/all`);
+        setLoading(false);
         console.log(foodData);
         setFoodList(foodData.data.data);
     }   
