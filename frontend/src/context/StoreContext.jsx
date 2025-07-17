@@ -12,8 +12,10 @@ const StoreContextProvider = (props) =>{
     const [cartItems,setCartItems] = useState({});
     const [token,setToken] = useState(localStorage.getItem("token") || "");
     const[food_list,setFoodList] = useState([]);
+    const [loading , setLoading] = useState(false);
 
-    const url = "https://foodizo-backend-eq3w.onrender.com";
+
+    const url = "http://localhost:4000";
     
 
     const addToCart = async (itemId) => {
@@ -70,10 +72,12 @@ const StoreContextProvider = (props) =>{
     }
 
     const fetchfood_list = async () =>{
-        const foodData = await axios.get(`${url}/api/food/all`);
+        setLoading(true);
+        // const foodData = await axios.get(`${url}/api/food/all`);
+        // setLoading(false);
         console.log(foodData);
         setFoodList(foodData.data.data);
-    }
+    }   
 
     useEffect(()=>{
         async function loadData (){
@@ -107,6 +111,7 @@ const StoreContextProvider = (props) =>{
         discountAmt,
         setDiscountAmt,
         totalamt,
+        loading,
     }
     return (
         <StoreContext.Provider value={contextValue}>

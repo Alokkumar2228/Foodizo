@@ -9,7 +9,7 @@ const Verify = () => {
     const [searchParams,setSearchParams] = useSearchParams();
     const success = searchParams.get("success");
     const orderId = searchParams.get("orderId");
-   
+    console.log(success,orderId);
     const {url} = useContext(StoreContext);
     const navigate = useNavigate();
 
@@ -34,7 +34,7 @@ const Verify = () => {
       
 
     useEffect(()=>{
-        console.log("Verify page loaded 🚀", { success, orderId });
+        console.log("Verify page loaded ", { success, orderId });
         verifyPayment();
     },[]);
 

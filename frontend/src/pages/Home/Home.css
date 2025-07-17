@@ -1,0 +1,32 @@
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 320px;
+  width: 100%;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.spinner-gif {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.spinner-text {
+  font-size: 1.5rem;
+  color: #ff9800;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #fff3e0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}

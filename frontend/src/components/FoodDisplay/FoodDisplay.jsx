@@ -11,7 +11,7 @@ const FoodDisplay = ({ category, searchquery ,recent1 }) => {
 
   // Filter food items based on category and search query
   const filteredFoodList2 = food_list
-    .filter((item) => {
+    .filter((item) => {   
       // Filter by category
       if (category === "All" || category === item.category) {
         return true;

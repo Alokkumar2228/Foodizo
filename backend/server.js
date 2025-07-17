@@ -18,6 +18,7 @@ const app = express()
 const port = process.env.PORT || 4000
 //using cosrs you can access backend from any frontend
 const allowedOrigins = [
+  "http://localhost:5173",
     "https://foodizo-frontend-h5rj.onrender.com",
     "https://foodizo-admin.onrender.com","https://foodizo-frontend.onrender.com"
   ];
