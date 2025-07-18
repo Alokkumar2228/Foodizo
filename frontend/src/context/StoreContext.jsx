@@ -15,7 +15,7 @@ const StoreContextProvider = (props) =>{
     const [loading , setLoading] = useState(false);
 
 
-    const url = "http://localhost:4000";
+    const url = "https://foodizo-backend-eq3w.onrender.com";
     
 
     const addToCart = async (itemId) => {

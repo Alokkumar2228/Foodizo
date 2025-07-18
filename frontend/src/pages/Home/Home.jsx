@@ -12,10 +12,6 @@ const Home = ({searchquery,recent1, recent2 ,setRecent1, setRecent2}) => {
 
   const[category,setCategory] = useState("All")
   const {loading} = useContext(StoreContext);
-
-  useEffect(()=>{
-    console.log(loading);
-  },[])
   
 
   return (
